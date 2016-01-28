@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+	<title>Flickr Simple Gallery</title>
+	<meta name="description" content="Flickr Simple Gallery by jaymabazza@gmail.com">
+	<meta name="author" content="Jay Mabazza">
+
+	<link rel="stylesheet" href="css/styles.css?v=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="flickr-search">
+		<input type="text" id="flick-search-term" placeholder="Search" />
+		<input type="button" value="Flickr Search" onclick="flickr_init(this)" data-page="1" />
+	</div>
+
+	<div class="flickr-gallery">
+		<div class="loading hidden"></div>
+		<div class="flickr-gallery-container hidden">
+			<div class="flickr-gallery-photo">
+				<a data-title="" data-abstract="" href="">
+					<img src="" />
+				</a>
+			</div>
+		</div>
+		<span>What do you want to see? (Enter <i>"puppy"</i> or <i>"galaxy"</i> in search box)</span>
+	</div>
+
+	<div class="flickr-nav"><a href="#" class="" onClick="flickr_init(this)" data-page=""></a></div>
+
+	<div class="flickr-upscale flickr-upscale-close">
+		<img src="" id="flickr_spotlight" />
+		<div class="flickr-upscale-info">
+			<h2></h2>
+			<p></p>
+			<span>[Close]</span>
+		</div>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>

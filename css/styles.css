@@ -1,0 +1,120 @@
+/* Reset applicable properties */
+html, body, div, h2, p {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	vertical-align: baseline;
+}
+
+/* General styling */
+body {
+	color: #324fe1;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 10px;
+}
+a, a:visited {
+	text-decoration: none;
+}
+.hidden {
+	display: none;
+}
+
+/* Search area */
+.flickr-search {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+	.flickr-search input[type="text"] {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		outline: none;
+		padding: 5px;
+		transition: all .20s ease-in-out;
+	}
+	.flickr-search input[type="text"]:focus {
+		box-shadow: 0 0 5px #324fe1;
+	}
+	.flickr-search input[type="button"] {
+		background: #324fe1;
+		border: 1px solid #324fe1;
+		border-radius: 3px;
+		color: #ddd;
+		cursor: pointer;
+		padding: 5px;
+	}
+
+/* Gallery */
+.flickr-gallery {
+	overflow: hidden;
+	padding: 10px 0;
+}
+	.flickr-gallery .loading {
+		background-image: url('ajax-loader.gif');
+		height: 16px;
+		margin: 25px auto;
+		width: 16px;
+	}
+	.flickr-gallery .flickr-gallery-photo {
+		float: left;
+	}
+		.flickr-gallery .flickr-gallery-photo img {
+			max-height: 150px;
+			margin-right: 3px;
+		}
+
+/* Pagination */
+.flickr-nav {
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	text-align: right;
+}
+	.flickr-nav a {
+		color: #324fe1;
+		padding: 0 3px;
+	}
+	.flickr-nav a:hover {
+		text-decoration: underline;
+	}
+	.flickr-nav a.flickr-nav-current {
+		color: #000;
+		text-decoration: none;
+	}
+
+/* Flickr Full Screen */
+.flickr-upscale {
+	background: rgba(30,30,30, 0.8);
+	bottom: 0;
+	display: inline;
+	left: 0;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.flickr-upscale.flickr-upscale-close {
+	display: none;
+}
+	.flickr-upscale .flickr-upscale-info {
+		color: #fff;
+	}
+	.flickr-upscale .flickr-upscale-info p {
+		font-size: 12px;
+	}
+	.flickr-upscale span {
+		bottom: 10px;
+		color: #fff;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+	}
+	.flickr-upscale img {
+		left: 0;
+		margin: 0 auto;
+		margin-top: 15px;
+		max-height: 90%;
+		max-width: 90%;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
