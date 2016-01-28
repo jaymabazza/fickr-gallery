@@ -1,24 +1,24 @@
-##Simple Flickr Gallery test as required by Yahoo7.
+Simple Flickr Gallery test as required by Yahoo7.
 
-######Background:
+Background:
 - This app demonstrates the use of HTML, CSS, Javascript and NodeJS without thirdparty libraries and/or frameworks. All organic, no preservatives.
 
-######Tech:
+Tech:
 - Nodejs: serves all the files and API requests.
 - HTML: renders our app's view
 - CSS: makes the app sexy
 - Javascript: handles xhr calls to/from Node
 
-######Running the app:
+Running the app:
 - Extract the zip file.
 - run node flickr.js in your command line (example: "node /location/unzipped/flickr.js")
 - open http://localhost:8888 in your favorite browser
 
-######Configuration:
+Configuration:
 - If we want to increase the results (number of pictures per page), open flickr.js, then modify the value of:
-	```'per_page' : 5```
+	'per_page' : 5
 - If we want to increase the pagination link (default 10 links), open js/scripts.js, in `render_nav` function, change:
-	```var page_btn_count = 10```
+	var page_btn_count = 10
 
 Jay Mabazza, jay.mabazza@vodafone.com.au
 0438-929656
