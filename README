@@ -12,7 +12,7 @@ Tech:
 Running the app:
 - Extract the zip file.
 - run node flickr.js in your command line (example: "node /location/unzipped/flickr.js")
-- open http://localhost:8888 in your favorite browser
+- open http://localhost:8888/flickr.html in your favorite browser
 
 Configuration:
 - If we want to increase the results (number of pictures per page), open flickr.js, then modify the value of:
